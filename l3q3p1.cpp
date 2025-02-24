@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 // Rectangle class declaration.
@@ -63,6 +64,15 @@ void printData(Rectangle arr[], int nRecords) {
     }
 }
 
+void printFile(Rectangle arr[], int nRecords) {
+    ofstream fout("rectangle.txt", ios::app);
+    for(int i = 0; i < nRecords; i++) {
+        fout << "Rectangle " << i + 1 << ": Width = " << arr[i].getWidth()
+             << ", Length = " << arr[i].getLength()
+             << ", Area = " << arr[i].getArea() << endl;
+    }
+}
+
 int main() {
     // Declare an array that can hold 50 Rectangle objects.
     Rectangle rectArray[50];
@@ -78,6 +88,6 @@ int main() {
     // Display the rectangle data.
     cout << "\n......Here is the data stored in the array...............\n";
     printData(rectArray, nRecords);
-
+    printFile(rectArray, nRecords);
     return 0;
 }
