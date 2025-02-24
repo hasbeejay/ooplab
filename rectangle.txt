@@ -1,0 +1,4 @@
+Rectangle 1: Width = 11, Length = 22, Area = 242
+Rectangle 2: Width = 33, Length = 44, Area = 1452
+Rectangle 3: Width = 55, Length = 66, Area = 3630
+ 

@@ -1,0 +1,6 @@
+Circle Details:
+-----------------
+Circle Center: (33, 66)
+Circle Radius: 24
+Area: 1808.64
+Circumference: 150.72
